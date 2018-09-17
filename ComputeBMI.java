@@ -15,18 +15,21 @@ public class ComputeBMI{
     double heightinm = height * METERS_PER_INCH;
 
     double IMC = weightink / (heightinm*heightinm);
+    // double IMC = weightink / Math.pow (heightinm, 2);
 
-    if (IMC <= 18.5) {
-      System.out.println("Peso Insuficiente");
-    }
-    if (IMC > 18.5 && IMC < 24.9) {
-      System.out.println("Peso Normal");
-    }
-    if (IMC > 25 && IMC < 26.9) {
-      System.out.println("Sobrepeso Grado I");
-    }
-    if (IMC > 27 && IMC < 29.9){
-      System.out.println("Sobrepeso Grado II");
-    }
+    System.out.println("Your BMI is: " + IMC);
+    
+    if (IMC < 16)
+      System.out.println("Your are very seriously underweight");
+    else if (IMC < 18)
+      System.out.println("Your are underweight");
+    else if (IMC < 24)
+      System.out.println("Your are normal weight");
+    else if (IMC < 29)
+      System.out.println("Your are overweight");
+    else if (IMC < 35)
+      System.out.println("Your are seriously overweight");
+    else
+      System.out.println("Your are gravely overweight");
   }
 }
