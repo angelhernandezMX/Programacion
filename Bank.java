@@ -3,7 +3,6 @@ public class Bank {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
-    System.out.println("");
     System.out.println("Menciona que tipo de tarjeta usa: \n" +
                         "Si usa Tipo 1 escriba: 1 \n"+
                         "Si usa Tipo 2 escriba: 2 \n"+
