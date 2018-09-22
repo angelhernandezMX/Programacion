@@ -1,5 +1,5 @@
-simport java.util.Scanner;
-public class MayoraMenor {
+import java.util.Scanner;
+public class Homework5 {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
