@@ -1,7 +1,7 @@
 import javax.swing.JOptionPane;
 public class ForLoop{
   public static void main(String[] args) {
-    int quest = 0;
+    int quest;
     do{
     int n = Integer.parseInt(JOptionPane.showInputDialog("Ingresa que tabla quieres ver:"));
     String salida = "";
@@ -10,12 +10,12 @@ public class ForLoop{
       int m = n * i;
       //JOptionPane.showMessageDialog(null,"1 x" + i + "=" + m);
 
-      salida += "1 x " + i + "=" + m + "\n";
+      salida += n + "x" + i + "=" + m + "\n";
     }
     JOptionPane.showMessageDialog(null, salida);
-    quest = Integer.parseInt(JOptionPane.showInputDialog("¿Deseas buscar otra tabla? \n"+ "Presiona 0 Si quieres \n" + "Presiona 1 Si NO quieres"));
+    quest = JOptionPane.showConfirmDialog(null, "¿Deseas buscar otra tabla? \n"+ "Presiona Si \n" + "Presiona NO ");
     }
-    while (quest != 0);
+    while (quest == JOptionPane.YES_OPTION);
 
 
   }
